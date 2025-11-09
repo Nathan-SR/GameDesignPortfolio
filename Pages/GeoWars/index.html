@@ -1,0 +1,141 @@
+<link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'/>
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf‑8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nathan Robbins – Storyboarding</title>
+
+    <link rel="stylesheet" href="storyboarding.css" />
+    <style media="print">
+        body,
+        .scrollable-window {
+          overflow: visible !important;
+          height: auto !important;
+        }
+      
+        .main-page-content,
+        .landing-section,
+        .scroll-indicator {
+          transform: none !important;
+          opacity: 1 !important;
+          animation: none !important;
+        }
+      
+        .scroll-indicator,
+        .decoration-bubble {
+          display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="topbar">
+            Nathan Robbins
+            <div class="topbar-menu">
+                <span class="menu-opt" onclick="window.location.href='/Portfolio/';" tabindex="1">Home</span>
+                <a href="Images/Resume.pdf" download class="menu-opt" tabindex="2">
+                Resume
+                </a>
+                <span class="menu-opt" tabindex="3">Contact</span>
+            </div>
+        </div>
+        <div class="scrollable-window" id="scrollcont">
+            <div class="main-page-content">
+                <div class='landing-section'>
+                    <div class="page-title">GeoWars — Line-to-Shape Arcade Game</div>
+                    <div class="divider"></div>
+                    <div class="page-description">
+                        <div class="page-description-text-container">
+                            <span class="page-description-text">I love deep games—both as a player and a designer. As a player, it’s rewarding to see time invested translate into genuine improvement; as a designer, it’s exciting to craft systems that invite mastery. But I also believe that </span>
+                            <span class="page-description-text green">depth</span>
+                            <span class="page-description-text"> shouldn't come from </span>
+                            <span class="page-description-text red">complexity.</span>
+                            <span class="page-description-text"> As a programmer, I understand the hidden intricacy behind simple systems; as a designer, I know how feature creep can obscure a game’s core; and as a player, I’ve been frustrated by inscrutable game mechanics.</span>
+                            <br/>
+                            <br/>
+                            <span class="page-description-text">With this project, I set out to marry </span>
+                            <span class="page-description-text blue">accessible mechanics</span>
+                            <span class="page-description-text"> with </span>
+                            <span class="page-description-text blue"> challenging programming</span>
+                            <span class="page-description-text">—creating something easy to play but hard to master, and a codebase that’s as elegant as it is engaging.</span>
+                        </div>
+                    </div>
+                    <div class='scroll-indicator'>
+                        <img class="scroll-indicator-image" src="Images/DownArrow.png" alt="Down‑arrow icon indicating more content below"/>
+                    </div>
+                </div>
+                <div class="section-title">
+                    The Big Picture
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                I wanted depth without complexity: draw a shape, it becomes a solid you fight with. The hard part was turning messy line strokes into clean polygons robustly and efficiently.
+                </div>
+                <div class="divider large visible"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <video controls autoplay loop muted playsinline width="100%">
+                            <source src="Images/Full_Demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="image-caption">
+                            Gameplay demo, showing shape creation and multiple turns of combat.
+                        </div>
+                    </div>
+                </div>
+                <div class="divider large visible"></div>
+                <div class="section-title">
+                    Polygon-from-Sketch Algorithm.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>               
+                Given an ordered point stream, split it into fixed-size segments, compute each segment’s line of best fit, then grow faces by slope similarity with a tolerance τ. Outlier points are absorbed by segment fitting; sharp corners trigger a new face. For each face, refit a final line and intersect adjacent lines to get polygon vertices.
+                </div>
+                <div class='images-panel bubble'>
+                    <div class="image-container">
+                        <img class="image" src="Images/code_snippet.png" alt="Code snippet depicting pared-down algorithm"/>
+                        <div class="image-caption">
+                            A dramatically pared-down, top-level pseudocode of the algorithm.
+                        </div>
+                    </div>
+                    <div class="text-bubble-container">
+                        <div class='text-bubble blue'>
+                            <div class='text-bubble-text'>
+                            Segment fitting damps noise; comparing angles of lines is more stable than point-wise angles. Pruning outliers is much cheaper over ~20 segments than N points.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='divider large visible'></div>
+                <div class="section-title">
+                    Results
+                </div>
+                <div class='divider'></div>
+                <div class='section-description'>    
+                    <span class="page-description-text bold">Performance</span>  
+                    <div class='divider'></div>
+                    Algorithm runs in O(N) time and space complexity; impact on framerate is negligible regardless of shape size.
+                    <br/>
+                    <br/>
+                    <span class="page-description-text bold">Robustness</span>
+                    <div class='divider'></div>
+                    Algorithm has over 97% accuracy for triangles and quadrilaterals (benchmarked over 1k samples).
+                </div>
+                <div class='divider large visible'></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <video controls autoplay loop muted playsinline width="100%">
+                            <source src="Images/Bad_Shapes_Demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="image-caption">
+                            Demo showing the algorithm's tolerance of sub-optimal line drawing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="module" src="script.js"></script>
+</body>
+</html>

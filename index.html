@@ -1,0 +1,140 @@
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'></link>
+<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'></link>
+<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'></link>
+<link href='https://fonts.googleapis.com/css?family=Koh Santepheap' rel='stylesheet'></link>
+<link href='https://fonts.googleapis.com/css?family=Marck Script' rel='stylesheet'></link>
+<link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'/>
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf‑8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nathan Robbins – Portfolio</title>
+
+    <link rel="stylesheet" href="App.css" />
+    <style media="print">
+      body,
+      .scrollable-window {
+        overflow: visible !important;
+        height: auto !important;
+      }
+    
+      .main-page-content,
+      .landing-section,
+      .scroll-indicator {
+        transform: none !important;
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    
+      .scroll-indicator,
+      .decoration-bubble {
+        display: none !important;
+      }
+  </style>
+</head>
+<body>
+
+<div class="screen">
+    <div class="topbar">
+        Nathan Robbins
+        <div class="topbar-menu">
+            <span class="menu-opt" onclick="window.location.href='/Portfolio/';" tabindex="1">Home</span>
+            <a href="Images/Resume.pdf" download class="menu-opt" tabindex="2">
+              Resume
+            </a>
+            <span class="menu-opt" tabindex="3">Contact</span>
+        </div>
+    </div>
+
+  <div class="scrollable-window" id="scrollcont">
+    <div class="main-page-content">
+      <div class="banner-container">
+        <div class="circles">
+          <div class="circle blue"><span class="text-1">Software</span></div>
+          <div class="circle yellow">
+            <div class="circle-text">
+              <span class="text-2">should</span>
+              <span class="text-3">make</span>
+            </div>
+          </div>
+          <div class="circle purple">
+            <div class="circle-text">
+              <span class="text-4">us</span>
+              <span class="text-5">better</span>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <img class="scroll-indicator-image" src="Images/DownArrow.png" alt="Down arrow icon prompting the user to scroll for more content"/>
+        </div>
+      </div>
+
+      <div class="personal-statement-container">
+        <div class="personal-statement-text">
+          <p class="statement-text">Hi, I'm <span class="name">Nathan Robbins</span>, a student developer and game designer living in Providence, RI. I <span id="rotator‑1" class="statement-rotator"></span> that give users <span id="rotator‑2" class="statement-rotator"></span>.</p>
+        </div>
+      </div>
+
+      <div class="portals">
+        <div class="portals-title-container">
+          <div class="pt-circles-parent">
+          </div>
+        </div>
+
+        <div class="portal-container-cont">
+          <div class="portal-container left">
+            <div onclick="window.location.href='/Portfolio/Pages/GeoWars/';" class="portal" tabindex="4">
+              <img class="portal-image" src="Images/gw.png" alt="Sketch of CVS self‑checkout kiosk used for user‑experience analysis"/>
+                <div class="portal-text">
+                    <div class="portal-text-content">
+                        Competitive drawing arcade game with custom algorithm for line to shape detection. (Click for more.)
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="portal-container leftmid">
+            <div class="portal" onclick="window.location.href='/Portfolio/Pages/DeckbuildingTowerDefense/';" tabindex="5">
+              <img class="portal-image" src="Images/td.png" alt="Illustration of an accessible, intuitive search bar component"/>
+                <div class="portal-text">
+                    <div class="portal-text-content">
+                        Developing a roguelike deckbuilding tower-defense game using the Godot engine. (Click for more.)
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="portal-container rightmid">
+            <div class="portal" onclick="window.location.href='/Portfolio/Pages/Redesign/';" tabindex="6">
+              <img class="portal-image" src="Images/redesign_image.png" alt="Mock‑up of a redesigned local business webpage focusing on usability"/>
+                <div class="portal-text">
+                    <div class="portal-text-content">
+                        Redesigned local business's webpage to improve usability and accessibility. (Click for more.)
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="portal-container right">
+            <a class="portal" href="https://brownrisdgames.itch.io/origami-bird-battle" tabindex="7">
+              <img class="portal-image" src="Images/bb.png" alt="Concept graphic of a CSV import interface with user‑friendly design"/>
+              <div class="portal-text">
+                <div class="portal-text-content">
+                  Play Origami Bird Battle, a game made in collaboration with the other wonderful people at Brown Risd Game Design!
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="stars"></div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
