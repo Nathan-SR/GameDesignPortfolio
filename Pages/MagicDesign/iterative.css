@@ -125,6 +125,16 @@ body {
     font-style: italic;
 }
 
+.card-image{
+    object-fit: scale-down;
+    height: 20rem;
+    border: none;
+}
+
+.image.borderless{
+    border: none;
+}
+
 .images-panel {
     display: flex;
     flex-direction: row;

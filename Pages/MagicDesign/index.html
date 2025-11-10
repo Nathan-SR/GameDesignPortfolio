@@ -46,6 +46,7 @@
                 <div class='landing-section'>
                     <div class="page-title">Magic: the Gathering Card Design</div>
                     <div class="divider"></div>
+                    <div class="divider"></div>
                     <div class="page-description">
                         <div class="page-description-text-container">
                             <span class="page-description-text">In thirteen years of playing Magic: The Gathering, I’ve loved it for different reasons: first for the wild art and mythic rares, then for the nights with friends, and eventually for the grind of local tournaments and MTG Arena. As I started making games of my own, I realized all of those reasons are supported by one thing: </span>
@@ -70,13 +71,10 @@
                 </div>
                 <div class="section-title">First Steps: Mechanical Identity</div>
                 <div class="divider"></div>
-                <div class='section-description'>
-                  I wanted depth without complexity: draw a shape, it becomes a solid you fight with. The hard part was turning messy line strokes into clean polygons robustly and efficiently.
-                </div>
                 <div class="divider large visible"></div>
                 <div class="images-panel small">
-                    <div class="image-container">
-                        <img class="image" src="Images/stitch.webp" alt="The Magic card Advanced Stitchwing"/>
+                    <div class="image-container borderless">
+                        <img class="card-image" src="Images/stitch.webp" alt="The Magic card Advanced Stitchwing"/>
                         <div class="image-caption">
                             “Improvement is a consequence of practice.”
                         </div>
@@ -93,9 +91,9 @@
                 <div class="divider"></div>
                 <div class="images-panel small">
                     <div class="image-container borderless">
-                        <img class="image" src="Images/stitch.webp" alt="A card with the Converge mechanic."/>
+                        <img class="card-image" src="Images/stitch.webp" alt="A card with the Converge mechanic."/>
                         <div class="image-caption">
-                            “The converge mechanic rewarded players for amassing multiples of one creature type. It was shared by all five colors.”
+                            The converge mechanic rewarded players for amassing multiples of one creature type. It was shared by all five colors
                         </div>
                     </div>
                 </div>
@@ -110,9 +108,9 @@
                 <div class="divider"></div>
                 <div class="images-panel small">
                     <div class="image-container borderless">
-                        <img class="image" src="Images/stitch.webp" alt="Pond Prophet and Lilysplash Mentor from Bloomburrow."/>
+                        <img class="card-image" src="Images/bloomburrow.png" alt="Pond Prophet and Lilysplash Mentor from Bloomburrow."/>
                         <div class="image-caption">
-                            “Pond Prophet and Lilysplash Mentor from Bloomburrow.”
+                            Pond Prophet and Lilysplash Mentor from Bloomburrow.
                         </div>
                     </div>
                 </div>
@@ -139,14 +137,187 @@
                 <div class='section-description'>
                     I also chose a bottom-up approach to setting. Because this cube was meant to explore archetype structure more than worldbuilding, I let the mechanics lead. I finished the cards first and only later thought about flavor text and art.
                 </div>
-                <div class="divider"></div>
+                <div class="divider large"></div>
                 <div class="section-title">Data-Driven Design</div>
-                <div class="divider"></div>
+                <div class="divider large"></div>
                 <div class='section-description'>
                 Unlike my first set (which lived in Google Docs and improvised printouts), this cube was built in Magic Set Editor from day one. MSE’s built-in charts let me track things like color balance, mana curve, removal density, and creature/spell ratios. That let me be scientific about changes: after a draft where players said “removal feels weak,” I could check the actual removal count and see whether it was truly low or whether we’d just had an odd draft. And when I buffed it, I could immediately see how that affected the overall makeup of the cube.
                 </div>
                 <div class="divider"></div>
-                
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="image" src="Images/mv.png" />
+                        <div class="image-caption">
+                            A chart showing the mana value (cost) of each card in the set.   
+                            <br/>
+                            X: Cost   Y: # cards
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="image" src="Images/typebycolor.png"/>
+                        <div class="image-caption">
+                            A chart showing the card type of each card in the set, broken down by color.   
+                            <br/>
+                            X: card type   Y: # cards by color identity
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="image" src="Images/power.png" />
+                        <div class="image-caption">
+                            A chart showing the power of each creature in the set, broken down by color.   
+                            <br/>
+                            X: color identity   Y: power
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="image" src="Images/notesgraph.png"/>
+                        <div class="image-caption">
+                            A chart showing aggregations of terms I added in the "notes" of cards. Here viewing cards marked as "removal".   
+                            <br/>
+                            X: note term   Y: # cards
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                 <div class='section-description'>
+                    For any game with a lot of moving parts, instrumentation is part of design—it keeps the set cohesive and makes iteration faster and more honest.
+                </div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class="section-title">Playtesting</div>
+                <div class="divider"></div>
+                 <div class='section-description'>
+                The biggest improvement in my second set—and honestly in my game design process overall—was committing to real playtesting and iteration. With my first custom set I ran a few events but never actually changed the cards based on what we saw. This time, with better tools and clearer goals, I built a loop I could repeat.
+                </div>
+                <div class='section-description'>
+                    <div class="page-description-text">
+                        My playtesting approach has three parts:
+                    </div>
+                    <div class="divider"></div>
+                    1. Gather player feedback (feel first).
+                    <br/>
+                    <br/>
+                    Players love to suggest fixes, but I start by asking about their experience: “How did it feel when this happened?”, “Was that win satisfying or did it feel cheap?” Fun is the main metric, and feelings tell me faster than card-by-card suggestions where the fun is hiding.
+                    <div class="divider"></div>
+                    2. Collect hard data.
+                    <br/>
+                    <br/>
+                    Balance problems kill fun fast—a single dominant card, or an archetype that never quite gets there leads players to feel bad. I track which archetypes are actually being drafted, which cards overperform or underperform, and I log every change so I can see whether a problem is real or just variance.
+                    <div class="divider"></div>
+                    3. Limit variables per iteration.
+                    <br/>
+                    <br/>
+                    Each round I only adjust one slice of the environment— e.g. burn/removal density, green creature stats, or blue counterspells—so I can tell what caused the change. That keeps the data interpretable.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    Over three years I’ve run close to fifty playtest sessions this way, leading to hundreds of small iterations. The biggest thing it taught me is that games don’t start balanced—and they often don’t even start fun. They become fun through testing, feedback, and disciplined changes.
+                </div>
+                <div class="divider"></div>
+                <div class="divider large visible"></div>
+                <div class="section-title">State of the Game</div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    As of today, nearly four years after starting work on my current set, I can say with confidence that it’s fun and fully playable. I still tinker with it often, but I’m long past sweeping changes. It has come a long way since the early days. Over time, I’ve loosened the archetypes in favor of more general synergy-building. Inspired by commander, a popular Magic format, I allow players to choose one card around which to build their decks. I have created an environment where every draft feels unique and every card can be useful in multiple contexts.
+                </div>
+                <div class='section-description'>
+                    Below are some miscellaneous lessons I’ve learned while working on this project.
+                </div>
+                <div class="divider large"></div>
+                <div class="section-title">Miscellaneous Thoughts</div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    Below are some miscellaneous lessons I’ve learned while working on this project.
+                </div>
+                <div class='section-description'>
+                    <div class="page-description-text">
+                        Depth can come from simplicity.
+                    </div>
+                    <div class="divider"></div>
+                    Over time, I’ve come to value simple cards that create interesting gameplay, often through synergies with other cards.
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel">
+                    <div class="image-container">
+                        <img class="image borderless" src="Images/synergy.png"/>
+                        <div class="image-caption">
+                            With Elaine and Forever-Tree’s Presence, you can turn this one mana spell into three 4/4 creatures—a great deal! 
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel">
+                    <div class="image-container">
+                        <img class="card-image" src="Images/locus.png"/>
+                        <div class="image-caption">
+                            Or combine it with Locus of Chaos to generate lots of mana!
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="card-image" src="Images/horror.png"/>
+                        <div class="image-caption">
+                            …or shadowseam apparition to gain life and drain your opponent’s.
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    <div class="page-description-text">
+                        Mechanics > narrative (when they clash).
+                    </div>
+                    <div class="divider"></div>
+                    Even the best narrative can’t save a game that feels bad to play. In early iterations of my set, I included a “devoid” keyword on many creatures purely because I felt it was flavorful. I failed to consider the mechanical problems: the accompanying “clear” frame obscured card color; it shadowed the real synergy, which was with the Reflection creature type (which all devoid creatures shared); and it took up valuable text space, making cards harder to read. I ended up changing devoid creatures into enchantment creatures, and created an enchantments archetype—tightening my mechanics and narrative feel all at once.
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel">
+                    <div class="image-container">
+                        <img class="card-image" src="Images/witness.png"/>
+                    </div>
+                    <div class="image-container">
+                        <img class="card-image" src="Images/horror.png"/>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    <div class="page-description-text">
+                        Bad balance can ruin fun—but so can overbalance.
+                    </div>
+                    <div class="divider"></div>
+                    It feels good to be powerful, and letting players feel overpowered is often a good way to create fun. With that in mind, I design some cards to be intentionally flashy and exciting, sometimes at the expense of perfect balance. In addition to the examples below, refer back to the Chaotic Recall/Elaine/Forever-Tree’s Presence synergy. One mana for three 4/4s might be considered quite unbalanced, but I want players to feel rewarded for assembling combos like that in my environment.
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="card-image" src="Images/magestic.png"/>
+                        <div class="image-caption">
+                            This thing is probably a bit too efficient and versatile, but it’s super fun to play with and not too miserable to play against.
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="card-image" src="Images/primacy.png"/>
+                        <div class="image-caption">
+                            If you can cast this, you’ll probably win the game—but it’s meant to reward unlocking all five colors of mana, which is no mean feat!
+                    </div>
+                </div>
             </div>
         </div>
     </div>
