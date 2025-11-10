@@ -1,0 +1,148 @@
+<link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'/>
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf‑8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nathan Robbins – Redesign</title>
+
+    <link rel="stylesheet" href="iterative.css" />
+    <style media="print">
+        body,
+        .scrollable-window {
+          overflow: visible !important;
+          height: auto !important;
+        }
+      
+        .main-page-content,
+        .landing-section,
+        .scroll-indicator {
+          transform: none !important;
+          opacity: 1 !important;
+          animation: none !important;
+        }
+      
+        .scroll-indicator,
+        .decoration-bubble {
+          display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <div class="topbar">
+            Nathan Robbins
+            <div class="topbar-menu">
+                <span class="menu-opt" onclick="window.location.href='/Portfolio/';" tabindex="1">Home</span>
+                <a href="Images/Resume.pdf" download class="menu-opt" tabindex="2">
+                Resume
+                </a>
+                <span class="menu-opt" tabindex="3">Contact</span>
+            </div>
+        </div>
+        <div class="scrollable-window" id="scrollcont">
+            <div class="main-page-content">
+                <div class='landing-section'>
+                    <div class="page-title">Magic: the Gathering Card Design</div>
+                    <div class="divider"></div>
+                    <div class="page-description">
+                        <div class="page-description-text-container">
+                            <span class="page-description-text">In thirteen years of playing Magic: The Gathering, I’ve loved it for different reasons: first for the wild art and mythic rares, then for the nights with friends, and eventually for the grind of local tournaments and MTG Arena. As I started making games of my own, I realized all of those reasons are supported by one thing: </span>
+                            <span class="page-description-text italic bold">great systems design</span>
+                            <br/>
+                            <br/>
+                            <span class="page-description-text">Magic’s </span>
+                            <span class="page-description-text red">color pie</span>
+                            <span class="page-description-text"> is the clearest example. It carves the game’s mechanical space into five identities that support different </span>
+                            <span class="page-description-text blue">player fantasies</span>
+                            <span class="page-description-text">green for “big things,” blue for control and information, red for fast-paced volatility—while giving designers a structure to make cards, factions, and worlds that feel coherent. The same effect in blue and black tells different stories: in blue, drawing cards is curiosity; in black, it’s ambition with a cost. Put them together and you get Dimir, a faction of ruthless operatives whose mechanics and flavor point in the same direction.</span>
+                            <br/>
+                            <br/>
+                            <span class="page-description-text">That kind of </span>
+                            <span class="page-description-text green">emergent depth</span>
+                            <span class="page-description-text"> and alignment between mechanics and player fantasies is what I try to achieve in my own designs. Over the past seven years I’ve been designing my own custom Magic cards to understand why choices like the color pie work, and how to apply those lessons to new projects. Read more to see my journey with Magic card design and my most recent project, a custom set with over 540 mechanically unique Magic cards.</span>
+                        </div>
+                    </div>
+                    <div class='scroll-indicator'>
+                        <img class="scroll-indicator-image" src="Images/DownArrow.png" alt="Down‑arrow icon indicating more content below"/>
+                    </div>
+                </div>
+                <div class="section-title">First Steps: Mechanical Identity</div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                  I wanted depth without complexity: draw a shape, it becomes a solid you fight with. The hard part was turning messy line strokes into clean polygons robustly and efficiently.
+                </div>
+                <div class="divider large visible"></div>
+                <div class="images-panel small">
+                    <div class="image-container">
+                        <img class="image" src="Images/stitch.webp" alt="The Magic card Advanced Stitchwing"/>
+                        <div class="image-caption">
+                            “Improvement is a consequence of practice.”
+                        </div>
+                    </div>
+                </div>
+                <div class="divider large visible"></div>
+                <div class='section-description'>
+                    Seven years ago I tried to build my first custom Magic set. I’d been reading Mark Rosewater’s articles on card and set design, so I set myself the very ambitious target of ~300 cards and spent five months filling it out one card at a time.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    The result looked fine on the surface. Each color had a creature group—white soldiers, blue wizards, black faeries, red goblins, green elves—and each did the “obvious” thing for that color: wizards drew cards, goblins multiplied, elves buffed each other. But when I playtested it, the same pattern appeared in every deck: pick a creature type, collect as many of it as possible, and win.
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container borderless">
+                        <img class="image" src="Images/stitch.webp" alt="A card with the Converge mechanic."/>
+                        <div class="image-caption">
+                            “The converge mechanic rewarded players for amassing multiples of one creature type. It was shared by all five colors.”
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    In other words, I’d flattened Magic’s most flexible tool, the color pie, into five near-identical linear strategies and generic-feeling factions. That’s when it clicked for me that good game design is about making mechanics that talk to each other meaningfully. Like any tool, a great game mechanic or system is only as good as what one uses it to create.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    You can see what I was trying to do in an official set like Bloomburrow. Its frog cards—e.g. Lilysplash Mentor and Pond Prophet—combine blue’s planning with green’s creature base to reward players not only for collecting more frogs, but for assembling a small engine of frogs that enhance each other. It’s a strong faction identity bolstered by compelling mechanics. That was missing from my set.
+                </div>
+                <div class="divider"></div>
+                <div class="images-panel small">
+                    <div class="image-container borderless">
+                        <img class="image" src="Images/stitch.webp" alt="Pond Prophet and Lilysplash Mentor from Bloomburrow."/>
+                        <div class="image-caption">
+                            “Pond Prophet and Lilysplash Mentor from Bloomburrow.”
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    Going into my next set, I made a rule for myself: don’t just assign tribes to colors; give each archetype a distinct play pattern and at least one synergy hook that isn’t “play more of me.”
+                </div>
+                <div class="divider"></div>
+                <div class="divider large visible"></div>
+                <div class="section-title">Part 2: Into the Deep End — A 540 Card Set</div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    My second large Magic project is a 540-card cube — a custom draft environment where every card is effectively the same rarity. I started it about three years after finishing my first set, and in that time I’d gotten better at limited, better at balance, and had done enough other design work to know what I wanted to fix.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    The biggest change was starting with archetypes. In my first set I mapped colors to single, linear tribes. This time I built around the 10 two-color pairs, the way many official sets do, because I’d seen how much more mechanical and narrative depth that structure gives.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    The challenge was to make each archetype feel distinct but still share enough cards to draft smoothly. For example, I knew my red–black deck would be about sacrificing creatures for value, so I made red–green about generating lots of small creatures—which conveniently become sacrifice fodder. That meant red could contain cards that lived in both archetypes. I repeated that logic across the color pairs so every color could “point” in more than one direction.
+                </div>
+                <div class="divider"></div>
+                <div class='section-description'>
+                    I also chose a bottom-up approach to setting. Because this cube was meant to explore archetype structure more than worldbuilding, I let the mechanics lead. I finished the cards first and only later thought about flavor text and art.
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
